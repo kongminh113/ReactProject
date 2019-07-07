@@ -3,6 +3,7 @@ package com.mynewproject;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.cubicphuse.RCTTorch.RCTTorchPackage;
 import com.zmxv.RNSound.RNSoundPackage;
 import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -25,6 +26,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RCTTorchPackage(),
             new RNSoundPackage(),
             new RNSoundPlayerPackage()
       );
